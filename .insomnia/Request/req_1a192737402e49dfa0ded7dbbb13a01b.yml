@@ -1,0 +1,39 @@
+_id: req_1a192737402e49dfa0ded7dbbb13a01b
+type: Request
+parentId: fld_5369091ed8a04b618aa361aa6fe1cfe3
+modified: 1653452701032
+created: 1653452701032
+url: "{{ _.host }}/api/users/4"
+name: Update User
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"username": "admin22",
+    	"email": "bunthoeurn.kong@igtech.asia11",
+    	"mobile": "08660116001",
+    	"displayName": "Kong Bunthoeurn11",
+    	"role": "USER"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_d1cf9829e1224cc492a35cfdf3d64f99
+  - name: Cookie
+    value: JSESSIONID=D7631F1A6C27018474F2260C996BAAE4
+    id: pair_0b10e93a80734e8bab806fcf22486835
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_9b8f7e6cbeca4d6aa15e73e43e49fb07',
+    'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'never', 60 %}"
+metaSortKey: -1652260707479.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

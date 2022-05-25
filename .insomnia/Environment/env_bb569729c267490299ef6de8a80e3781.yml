@@ -1,0 +1,18 @@
+_id: env_bb569729c267490299ef6de8a80e3781
+type: Environment
+parentId: env_a5431913d064f8e20c4b6965a78630d7778afe44
+modified: 1653452815072
+created: 1653452805749
+name: dev
+data:
+  host: http://119.8.167.94:80
+  username: admin
+  password: password
+dataPropertyOrder:
+  "&":
+    - host
+    - username
+    - password
+color: null
+isPrivate: false
+metaSortKey: 1653452805749

@@ -1,0 +1,40 @@
+_id: req_734a21cc507549febd80f9a455fb209d
+type: Request
+parentId: fld_5369091ed8a04b618aa361aa6fe1cfe3
+modified: 1653452701027
+created: 1653452701027
+url: "{{ _.host }}/api/users/changePassword"
+name: Change Password
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: ""
+parameters:
+  - name: old
+    value: password
+    description: ""
+    id: pair_96612e8202d341068a0c9e6b79e13874
+  - name: new
+    value: password
+    description: ""
+    id: pair_05afa77ffd93480eb5d199d74228d71c
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_d1cf9829e1224cc492a35cfdf3d64f99
+  - name: Cookie
+    value: JSESSIONID=D7631F1A6C27018474F2260C996BAAE4
+    id: pair_0b10e93a80734e8bab806fcf22486835
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_9b8f7e6cbeca4d6aa15e73e43e49fb07',
+    'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'never', 60 %}"
+metaSortKey: -1651212533412.75
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

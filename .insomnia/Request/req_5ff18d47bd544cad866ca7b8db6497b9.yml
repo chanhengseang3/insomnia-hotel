@@ -1,0 +1,37 @@
+_id: req_5ff18d47bd544cad866ca7b8db6497b9
+type: Request
+parentId: fld_339ed24c2b3d4f6f97f4f63ebca341ed
+modified: 1653452701106
+created: 1653452701106
+url: "{{ _.host }}/api/company?key=COMPANY"
+name: Update company info
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"tel1": "test",
+    	"tel2": "est"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_d1cf9829e1224cc492a35cfdf3d64f99
+  - name: Cookie
+    value: JSESSIONID=D7631F1A6C27018474F2260C996BAAE4
+    id: pair_0b10e93a80734e8bab806fcf22486835
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_9b8f7e6cbeca4d6aa15e73e43e49fb07',
+    'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'never', 60 %}"
+  disabled: false
+metaSortKey: -1648068011250.375
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

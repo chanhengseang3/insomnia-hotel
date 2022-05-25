@@ -1,0 +1,33 @@
+_id: req_8601ee0817734d68bf1c4a6a8c50e963
+type: Request
+parentId: fld_3078bc5f6f8943ab8630230fa65a4ff5
+modified: 1653453114324
+created: 1653452701116
+url: "{{ _.host }}/auth/token"
+name: Token
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"username":"{{ _.username }}",
+    	"password":"{{ _.password }}"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_11d0d7b0790b4e81b4ad2d1fd2d47141
+  - name: Cookie
+    value: JSESSIONID=D7631F1A6C27018474F2260C996BAAE4
+    id: pair_0e7da6917e0d4ab6afef48426f35c1dd
+authentication: {}
+metaSortKey: -1653308881621
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

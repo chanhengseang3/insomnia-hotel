@@ -1,0 +1,41 @@
+_id: req_4f77691252d34ad8967e24f62be34fb3
+type: Request
+parentId: fld_5369091ed8a04b618aa361aa6fe1cfe3
+modified: 1653452701005
+created: 1653452701005
+url: "{{ _.host }}/api/users"
+name: Create User
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"username": "admin4",
+    	"email": "bunthoeurn.kong4@igtech.asia",
+    	"mobile": "086601161",
+    	"password": "password",
+    	"displayName": "Kong Bunthoeurn4",
+    	"role": "USER"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_d1cf9829e1224cc492a35cfdf3d64f99
+  - name: Cookie
+    value: JSESSIONID=D7631F1A6C27018474F2260C996BAAE4
+    id: pair_0b10e93a80734e8bab806fcf22486835
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_9b8f7e6cbeca4d6aa15e73e43e49fb07',
+    'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'never', 60 %}"
+  disabled: false
+metaSortKey: -1653308881546
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

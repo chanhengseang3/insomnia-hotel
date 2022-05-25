@@ -1,0 +1,50 @@
+_id: req_ed71b05257bf4c209ac19f5bf35eb3c4
+type: Request
+parentId: fld_10d9cbaece2b4604a527996d3c600f8e
+modified: 1653452701047
+created: 1653452701047
+url: "{{ _.host }}/api/room"
+name: Create Room
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"name": "Double Room1",
+    	"description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.",
+    	"images": ["url1", "url2"],
+    	"description": "We begin with a pre-dawn departure (4.20 to 4.40 am depending on your hotel location) from your hotel for sunrise outside Angkor Wat. Enter the great temple in darkness from the little-visited eastern side, and creep along hoary cloistered corridors past the longest stretch of bas-relief carvings in the world. Soak up the atmosphere of dawn at Angkor, from the edge of one of the ancient library pools. We then explore the interior of the great temple, spending a thorough two hours discovering the corridors, central chambers and upper terraces of this truly great temple. Your expert local guide will decipher the myriad of stories behind the bas-relief carvings, and give you an insight into life during the height of the Khmer empire. We end our tour at Angkor with breakfast outside the temple (take away, from your hotel), and a short rest. Continue the morning by visit the Southern Gate of Angkor Thom, flanked by a row of 54 stone figures on each side - gods to the left and demons to the right – and the fortified city of Angkor Thom. At ‘The Bayon’ (12th century) we see its beautifully crafted central towers, covered in more than 200 enormous faces, then explore the famous Terrace of the Leper King, and the Terrace of Elephants. Enjoy lunch at your own expense, and a rest break before move on to the jungle-enveloped Ta Prohm – one of the most atmospheric of all temples in Angkor. Once home to 2,740 monks, Ta Prohm today looks much as it did in the early 1850s, when French explorer Henri Mouhot ‘rediscovered’ this crumbling site. After exploring the maze-like interior of Ta Prohm, return to your hotel after a long but fulfilling day, which will leave you with a lifetime of memories of one of the wonders of the world.",
+    	"facilities": [
+    		"Double Bed",
+    		"Free Wi-Fi",
+    		"Breakfast Include",
+    		"Private Balcony",
+    		"Beach View",
+    		"Free Newspape",
+    		"Room Service"
+    	],
+    	"price": 45,
+    	"maxPeople": 2
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_d1cf9829e1224cc492a35cfdf3d64f99
+  - name: Cookie
+    value: JSESSIONID=D7631F1A6C27018474F2260C996BAAE4
+    id: pair_0b10e93a80734e8bab806fcf22486835
+authentication:
+  type: bearer
+  token: "{% response 'body', 'req_9b8f7e6cbeca4d6aa15e73e43e49fb07',
+    'b64::JC5hY2Nlc3NfdG9rZW4=::46b', 'never', 60 %}"
+  disabled: false
+metaSortKey: -1648068011262.875
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
